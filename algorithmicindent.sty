@@ -1,0 +1,18 @@
+\ProvidesPackage{algorithmicindent}
+
+% Provides \INDENT in algorithmic environment
+
+\usepackage{algorithmic}
+\usepackage{indent}
+
+\newcommand{\INDENT}{\begin{indentation}{\algorithmicindent}{0pt}}
+\newcommand{\DEINDENT}{\end{indentation}}
+
+% Usage:
+% \begin{algorithmic}
+%   \STATE \textbf{Inputs:}
+%   \INDENT
+%     \STATE a set of transition samples $\mathcal{D}$ and a regression algorithm.
+%   \DEINDENT
+% \end{algorithmic}
+

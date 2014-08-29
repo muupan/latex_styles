@@ -1,0 +1,18 @@
+\ProvidesPackage{math_functions}
+
+% Provides math functions that can be used in math mode.
+
+\usepackage{amsmath}
+
+% \argmin and \argmax
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% \sign
+\DeclareMathOperator*{\sign}{sign}
+
+% \norm{}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+% \abs{}
+\providecommand{\abs}[1]{\lvert#1\rvert}
